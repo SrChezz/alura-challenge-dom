@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (productosGuardados) {
     productos = JSON.parse(productosGuardados);
     mostrarProductos();
+  } else {
+    mostrarVacio();
   }
 });
 
@@ -68,4 +70,14 @@ function eliminarProducto(id) {
   productos = productos.filter(producto => producto.id !== id);
   guardarEnLocalStorage();
   mostrarProductos();
+}
+
+// Función para mostrar imagen de productos vacios
+function mostrarVacio() {
+  cardsContainer.innerHTML = `
+  <div class="empty-card">
+            <h4>Parece que aun no has agregado nada...</h4>
+            <img class="not-found" src="images/notFound.png" alt="" />
+          </div>
+  `; // Limpiar el contenedor
 }

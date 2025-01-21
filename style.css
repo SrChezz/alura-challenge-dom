@@ -86,7 +86,8 @@ h2 {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--title-font);
 }
 
@@ -162,6 +163,19 @@ form {
 input,
 button {
   font-family: var(--body-font);
+}
+
+.empty-card {
+  margin-top: 25px;
+  color: var(--gray);
+  width: 50%;
+  margin: auto;
+  grid-column: span 3;
+  text-align: center;
+}
+
+.not-found {
+  width: 150px;
 }
 
 input {
