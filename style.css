@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Press+Start+2P&display=swap');
+
+:root {
+  --title-font: 'Press Start 2P', serif;
+  --body-font: 'Afacad Flux', serif;
+
+  /* Colors */
+  --purple-one: #8c0375;
+  --pink-one: #c004d9;
+  --purple-two: #9303a6;
+  --purple-blue: #5d04d9;
+  --blue-one: #03318c;
+  --black: #091057;
+  --gray: #4c585b;
+
+  font-family: var(--body-font);
+  font-size: 18px;
+}
+
+:root * {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0px;
+  background: #fff;
+  background-image: radial-gradient(#7e99a3 2px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -22px -22px;
+}
+
+header,
+footer {
+  color: white;
+  width: 100%;
+  background-color: var(--purple-blue);
+}
+
+header {
+  box-shadow: 0px 2px 6px 2px var(--black);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0px -2px 6px 2px var(--black);
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+header > .banner,
+footer .banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -2rem;
+}
+
+.footer-title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 0.2rem;
+}
+
+img.hearts-icon {
+  width: 150px;
+}
+
+.red {
+  color: rgb(239, 95, 95);
+}
+
+a {
+  color: #fff;
+}
+
+h1 {
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--title-font);
+}
+
+.center {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  padding: 100px 5%;
+  gap: 2rem;
+}
+
+.cards-container {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  overflow-y: scroll;
+}
+
+/* width */
+.cards-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.cards-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+.cards-container::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.card {
+  color: white;
+  background-color: var(--purple-blue);
+  padding: 12px;
+  border: 3px solid var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px var(--gray);
+}
+
+.card img {
+  width: 100%;
+  border: 3px solid var(--black);
+  border-radius: 8px;
+}
+
+.card h4 {
+  margin: 2px;
+}
+
+.card > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input,
+button {
+  font-family: var(--body-font);
+}
+
+input {
+  width: 100%;
+  border: 2px solid var(--blue-one);
+  border-radius: 12px;
+  font-size: 1rem;
+  padding: 0.1rem 0.5rem;
+  color: var(--blue-one);
+}
+
+input::placeholder {
+  color: var(--blue-one);
+}
+
+form .buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.delete:hover {
+  color: rgb(245, 153, 153);
+}
+
+button {
+  cursor: pointer;
+  border-radius: 12px;
+  border: 2px solid var(--blue-one);
+  width: 100%;
+  font-size: 1rem;
+  background-color: #fff;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: var(--blue-one);
+}
+
+button.active {
+  background-color: var(--blue-one);
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.7;
+}

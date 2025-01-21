@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/81478abc59.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <img class="hearts-icon" src="images/hearts-icon.png" alt="" />
+        <h1>Alura Geek</h1>
+      </div>
+    </header>
+    <main>
+      <div>
+        <h3 class="center">Mis Productos:</h3>
+        <div id="cardsContainer" class="cards-container">
+          <div class="card">
+            <img src="images/product-01.jpg" alt="" />
+            <h4>Stormtrooper</h4>
+            <div>
+              <span>$ 60,00</span>
+              <i class="delete fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="center">Agregar Producto:</h3>
+        <form id="productForm">
+          <div>
+            <input
+              autocomplete="off"
+              id="name"
+              type="text"
+              placeholder="nombre..."
+            />
+          </div>
+
+          <div>
+            <input
+              id="price"
+              type="number"
+              step="0.01"
+              placeholder="precio..."
+              autocomplete="off"
+            />
+          </div>
+
+          <div>
+            <input id="image" type="text" placeholder="imagen..." />
+          </div>
+
+          <div class="buttons">
+            <button class="active">Enviar</button>
+            <button>Limpiar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div class="banner">
+          <img class="hearts-icon" src="images/hearts-icon.png" alt="" />
+          <h2>Alura Geek</h2>
+        </div>
+        <h4 class="footer-title">
+          Desarrollado con <i class="red fa-solid fa-heart"></i> por
+          <a href="https://github.com/SrChezz">SrChezz</a>
+        </h4>
+        <h4 class="footer-title">Alura LATAM 2024</h4>
+      </div>
+    </footer>
+  </body>
+</html>
